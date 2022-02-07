@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: black;
+}
+
+/* style pr le header */
+a {
+  color: #18d26e;
+}
+a:hover {
+  color: #35e888;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem !important;
+}
+
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow: auto;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header .monNom {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #18d26e;
+}
+#header .monNom a {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+#header .monNom a:hover {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+#header span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(50px);
+  display: inline-block;
+}
+#header span.mariam {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#header h1 {
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+#header h1 .dev {
+  font-family: "Open Sans", sans-serif;
+  color: #04b8ff;
+  border-bottom: 2px solid #18d26e;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+#header h1 .dev:hover {
+  color: #fff;
+  border-bottom: 2px solid #ff28f4;
+  padding-bottom: 6px;
+}
+#header .social-links {
+  margin-top: 40px;
+}
+#header .social-links a {
+  font-size: 2rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 40px;
+}
+#header .social-links a:hover {
+  background: #18d26e;
+}
+#header .nav-menu {
+  margin-top: -450px;
+  margin-right: 70px;
+  width: 100%;
+}
+#header .nav-menu .bouton {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#header .nav-menu ul {
+  display: flex;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+#header .nav-menu ul li {
+  margin-left: 15px;
+}
+#header .nav-menu a {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#header .nav-menu a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+#header .nav-menu a:hover::before,
+#header .nav-menu li:hover > a::before,
+#header .nav-menu .active > a::before {
+  visibility: visible;
+  width: 25px;
+}
+#header .nav-menu a:hover,
+#header .nav-menu .active > a,
+#header .nav-menu li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* fin header */
+footer p {
+  font-size: 10px;
+}
+footer p:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* FIN FOOTER */
+
+/*# sourceMappingURL=style.css.map */
